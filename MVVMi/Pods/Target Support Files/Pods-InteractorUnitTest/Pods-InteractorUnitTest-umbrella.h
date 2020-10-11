@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MVVMiTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MVVMiTestsVersionString[];
+FOUNDATION_EXPORT double Pods_InteractorUnitTestVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_InteractorUnitTestVersionString[];
 
