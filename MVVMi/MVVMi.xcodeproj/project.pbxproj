@@ -32,11 +32,11 @@
 		CBB0C746252ED772008F091F /* ConstEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C744252ED772008F091F /* ConstEnums.swift */; };
 		CBB0C74E252ED96D008F091F /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C74D252ED96D008F091F /* BaseInteractor.swift */; };
 		CBB0C74F252ED96D008F091F /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C74D252ED96D008F091F /* BaseInteractor.swift */; };
-		CBB0C754252EDA3A008F091F /* NumberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C753252EDA3A008F091F /* NumberInteractor.swift */; };
-		CBB0C755252EDA3A008F091F /* NumberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C753252EDA3A008F091F /* NumberInteractor.swift */; };
-		CBB0C75B252EDA88008F091F /* NumberParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C75A252EDA88008F091F /* NumberParam.swift */; };
-		CBB0C75C252EDA88008F091F /* NumberParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C75A252EDA88008F091F /* NumberParam.swift */; };
-		CBB0C764252EDAEB008F091F /* NumberResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C763252EDAEB008F091F /* NumberResultModel.swift */; };
+		CBB0C754252EDA3A008F091F /* QuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C753252EDA3A008F091F /* QuotesInteractor.swift */; };
+		CBB0C755252EDA3A008F091F /* QuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C753252EDA3A008F091F /* QuotesInteractor.swift */; };
+		CBB0C75B252EDA88008F091F /* QuotesParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C75A252EDA88008F091F /* QuotesParam.swift */; };
+		CBB0C75C252EDA88008F091F /* QuotesParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C75A252EDA88008F091F /* QuotesParam.swift */; };
+		CBB0C764252EDAEB008F091F /* QuotesResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C763252EDAEB008F091F /* QuotesResultModel.swift */; };
 		CBB0C76A252EDBE4008F091F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C769252EDBE4008F091F /* MainViewModel.swift */; };
 		CBB0C76B252EDBE4008F091F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C769252EDBE4008F091F /* MainViewModel.swift */; };
 		CBB0C782252EDCA0008F091F /* InteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C781252EDCA0008F091F /* InteractorTest.swift */; };
@@ -97,9 +97,9 @@
 		CBB0C73A252EB28C008F091F /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		CBB0C744252ED772008F091F /* ConstEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstEnums.swift; sourceTree = "<group>"; };
 		CBB0C74D252ED96D008F091F /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
-		CBB0C753252EDA3A008F091F /* NumberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberInteractor.swift; sourceTree = "<group>"; };
-		CBB0C75A252EDA88008F091F /* NumberParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberParam.swift; sourceTree = "<group>"; };
-		CBB0C763252EDAEB008F091F /* NumberResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberResultModel.swift; sourceTree = "<group>"; };
+		CBB0C753252EDA3A008F091F /* QuotesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesInteractor.swift; sourceTree = "<group>"; };
+		CBB0C75A252EDA88008F091F /* QuotesParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesParam.swift; sourceTree = "<group>"; };
+		CBB0C763252EDAEB008F091F /* QuotesResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResultModel.swift; sourceTree = "<group>"; };
 		CBB0C769252EDBE4008F091F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CBB0C77F252EDCA0008F091F /* InteractorUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteractorUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB0C781252EDCA0008F091F /* InteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorTest.swift; sourceTree = "<group>"; };
@@ -263,7 +263,7 @@
 		CBB0C6A6252E98BC008F091F /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				CBB0C759252EDA77008F091F /* Number */,
+				CBB0C759252EDA77008F091F /* Quotes */,
 				CBB0C74D252ED96D008F091F /* BaseInteractor.swift */,
 			);
 			path = Interactors;
@@ -298,7 +298,7 @@
 		CBB0C72F252E9D61008F091F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CBB0C763252EDAEB008F091F /* NumberResultModel.swift */,
+				CBB0C763252EDAEB008F091F /* QuotesResultModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,13 +320,13 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
-		CBB0C759252EDA77008F091F /* Number */ = {
+		CBB0C759252EDA77008F091F /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
-				CBB0C753252EDA3A008F091F /* NumberInteractor.swift */,
-				CBB0C75A252EDA88008F091F /* NumberParam.swift */,
+				CBB0C753252EDA3A008F091F /* QuotesInteractor.swift */,
+				CBB0C75A252EDA88008F091F /* QuotesParam.swift */,
 			);
-			path = Number;
+			path = Quotes;
 			sourceTree = "<group>";
 		};
 		CBB0C780252EDCA0008F091F /* InteractorTest */ = {
@@ -608,13 +608,13 @@
 			files = (
 				CBB0C73B252EB28C008F091F /* RestClient.swift in Sources */,
 				CBB0C65E252E97C8008F091F /* MainViewController.swift in Sources */,
-				CBB0C75B252EDA88008F091F /* NumberParam.swift in Sources */,
-				CBB0C764252EDAEB008F091F /* NumberResultModel.swift in Sources */,
+				CBB0C75B252EDA88008F091F /* QuotesParam.swift in Sources */,
+				CBB0C764252EDAEB008F091F /* QuotesResultModel.swift in Sources */,
 				CBB0C74E252ED96D008F091F /* BaseInteractor.swift in Sources */,
 				CBB0C76A252EDBE4008F091F /* MainViewModel.swift in Sources */,
 				CBB0C65A252E97C8008F091F /* AppDelegate.swift in Sources */,
 				CBB0C721252E9B28008F091F /* Deinitializable.swift in Sources */,
-				CBB0C754252EDA3A008F091F /* NumberInteractor.swift in Sources */,
+				CBB0C754252EDA3A008F091F /* QuotesInteractor.swift in Sources */,
 				CBB0C6BB252E98ED008F091F /* RxViewModel.swift in Sources */,
 				CBB0C732252EB1D4008F091F /* ClientProtocol.swift in Sources */,
 				CBB0C7AC252EE555008F091F /* ConstValues.swift in Sources */,
@@ -628,10 +628,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBB0C733252EB1D4008F091F /* ClientProtocol.swift in Sources */,
-				CBB0C755252EDA3A008F091F /* NumberInteractor.swift in Sources */,
+				CBB0C755252EDA3A008F091F /* QuotesInteractor.swift in Sources */,
 				CBB0C671252E97C9008F091F /* MVVMiTests.swift in Sources */,
 				CBB0C6BC252E98ED008F091F /* RxViewModel.swift in Sources */,
-				CBB0C75C252EDA88008F091F /* NumberParam.swift in Sources */,
+				CBB0C75C252EDA88008F091F /* QuotesParam.swift in Sources */,
 				CBB0C722252E9B28008F091F /* Deinitializable.swift in Sources */,
 				CBB0C746252ED772008F091F /* ConstEnums.swift in Sources */,
 				CBB0C74F252ED96D008F091F /* BaseInteractor.swift in Sources */,
