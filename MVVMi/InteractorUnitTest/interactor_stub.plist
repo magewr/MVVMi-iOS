@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>quotes_interactor_p_valid_param_01</key>
+	<dict>
+		<key>comment</key>
+		<string>PartnerInfoParam 정상 파라미터 테스트</string>
+		<key>given</key>
+		<string>{
+	&quot;uuid&quot;: &quot;5bfcbe81-7e19-11e6-8fcf-0af93de98ded&quot;,
+	&quot;partnerUuid&quot;: &quot;6daaff7f-5c1e-11e6-93b9-0abe8d4f74d3&quot;,
+	&quot;apiKey&quot;: &quot;BbdxVeXcJ0Z6bN6bpRN0KQ%2BWklZNIILWt1UB51w%2Bnx0%3D&quot;
+}</string>
+		<key>when</key>
+		<string>{}</string>
+		<key>then</key>
+		<string>{
+    &quot;item&quot;: {
+        &quot;uuid&quot;: &quot;6daaff7f-5c1e-11e6-93b9-0abe8d4f74d3&quot;,
+        &quot;type&quot;: 8,
+        &quot;typeName&quot;: &quot;예물&quot;,
+        &quot;name&quot;: &quot;민준주얼리&quot;,
+        &quot;orgTel&quot;: &quot;02-6081-3333&quot;,
+        &quot;tel&quot;: &quot;0504-0536-1391&quot;,
+        &quot;email&quot;: &quot;minjunjewelry@naver.com&quot;,
+        &quot;rating&quot;: 84,
+        &quot;bizEmail&quot;: &quot;minjunjewelry@naver.com&quot;,
+        &quot;fax&quot;: &quot;02-3444-3111&quot;,
+        &quot;homepageUrl&quot;: &quot;http://minjunjewelry.com&quot;,
+        &quot;zipcode&quot;: null,
+        &quot;address&quot;: &quot;서울 강남구 삼성로149길 7 (청담동) 1,2층 민준주얼리&quot;,
+        &quot;address2&quot;: null,
+        &quot;region&quot;: &quot;서울 강남구&quot;,
+        &quot;parking&quot;: &quot;발렛파킹 (3000원) / 청담역 8번출구 도보 10분, 압구정로데오역 3번출구 도보 10분&quot;,
+        &quot;bizHour&quot;: &quot;오전 10시 30분~오후 7시 30분 / 매주 월요일 휴무&quot;,
+        &quot;isLike&quot;: 1,
+        &quot;ceo&quot;: null,
+        &quot;ceoTel&quot;: null,
+        &quot;logoUrl&quot;: &quot;https://dnna01d8m6k3w.cloudfront.net/profile/201905/20190505/8b472ed5-cd56-475e-b0e4-7f2229b2ceec.gif&quot;,
+        &quot;coverUrl&quot;: &quot;https://dnna01d8m6k3w.cloudfront.net/profile/202002/20200219/e37616cd-5c24-47b0-8417-cb2ac5d88d4b.png&quot;,
+        &quot;profile&quot;: &quot;minjunjewel&quot;,
+        &quot;profileUrl&quot;: &quot;http://stg-wbportal-web.h2m.io/page/minjunjewel&quot;,
+        &quot;reviewCnt&quot;: 41,
+        &quot;reviewTotalCnt&quot;: 41,
+        &quot;blockCnt&quot;: 0,
+        &quot;galleryCnt&quot;: 74,
+        &quot;galleryOrgCnt&quot;: 44,
+        &quot;reviewImageCnt&quot;: 30,
+        &quot;qnaCnt&quot;: 0,
+        &quot;content&quot;: &quot;민준주얼리는 심플한 라인의 아름다움을 주얼리에 접목시켜 \r\n\r\n특별하면서도 고급스러운 주얼리를 추구하는 하이엔드 핸드메이드 예물 브랜드입니다. \r\n\r\n섬세하고 정교한 디자인부터 GIA 전문 감정사의 진중한 보석선별까지, 민준주얼리는 완벽한 아름다움을 창조합니다. \r\n\r\n오랜시간 곁에 두고 보아도 그 빛을 잃지 않는, 시대를 초월하는 주얼리를 제안해 드리겠습니다. &quot;,
+        &quot;modTsp&quot;: &quot;2020-04-24 14:20:59&quot;,
+        &quot;isRegister&quot;: 1,
+        &quot;isProductTab&quot;: 1,
+        &quot;bookingHidden&quot;: 0,
+        &quot;b2cMallCount&quot;: 0,
+        &quot;sdmMallCount&quot;: 0,
+        &quot;buttonType&quot;: &quot;BOOKING&quot;,
+        &quot;holidayWeek&quot;: null,
+        &quot;isInquire&quot;: 1,
+        &quot;reservationRule&quot;: {
+            &quot;reservableDays&quot;: 60,
+            &quot;lastDay&quot;: &quot;2020-07-24&quot;,
+            &quot;nextDayStartReserveTime&quot;: &quot;11:00&quot;
+        },
+        &quot;holidays&quot;: [
+            {
+                &quot;day&quot;: &quot;2020-05-25 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-06-01 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-06-08 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-06-15 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-06-22 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-06-29 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-07-06 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-07-13 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-07-20 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-07-27 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-08-03 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-08-10 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-08-17 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-08-24 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-08-31 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-09-07 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-09-14 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-09-21 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-09-28 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-10-05 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-10-12 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-10-19 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-10-26 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-11-02 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-11-09 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-11-16 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-11-23 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-11-30 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-12-07 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-12-14 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-12-21 00:00:00&quot;,
+                &quot;content&quot;: null
+            },
+            {
+                &quot;day&quot;: &quot;2020-12-28 00:00:00&quot;,
+                &quot;content&quot;: null
+            }
+        ],
+        &quot;stores&quot;: [],
+        &quot;benefits&quot;: [
+            {
+                &quot;uuid&quot;: &quot;c9a52492-4667-11ea-9bb0-0ab3aefe6e38&quot;,
+                &quot;type&quot;: 1,
+                &quot;title&quot;: &quot;10% 캐시백&quot;,
+                &quot;content&quot;: &quot;방문 예약 후 계약 시 - 10% 현금 캐시백 제공(금/다이아가격 제외)&quot;,
+                &quot;iconUrl&quot;: &quot;https://dnna01d8m6k3w.cloudfront.net/benefit/icon/newcashback.png&quot;,
+                &quot;badge&quot;: &quot;10% 캐시백&quot;,
+                &quot;linkUrl&quot;: null
+            }
+        ],
+        &quot;tags&quot;: []
+    },
+    &quot;result&quot;: null,
+    &quot;total&quot;: null
+}</string>
+		<key>messageKey</key>
+		<string>success</string>
+	</dict>
+	<key>quotes_interactor_n_invalid_param_01</key>
+	<dict>
+		<key>comment</key>
+		<string>PartnerInfoParam 잘못된 파라미터 테스트</string>
+		<key>given</key>
+		<string>{
+	&quot;uuid&quot;: &quot;5bfcbe81-7e19-11e6-8fcf-0af93de98ded&quot;,
+	&quot;partnerUuid&quot;: &quot;&quot;,
+	&quot;apiKey&quot;: &quot;BbdxVeXcJ0Z6bN6bpRN0KQ%2BWklZNIILWt1UB51w%2Bnx0%3D&quot;
+}</string>
+		<key>when</key>
+		<string>{}</string>
+		<key>then</key>
+		<string>{
+    &quot;msg&quot;: &quot;다시 시도해주세요.&quot;,
+    &quot;code&quot;: &quot;99999&quot;
+}</string>
+		<key>messageKey</key>
+		<string>networkInvalidParameter</string>
+	</dict>
+</dict>
+</plist>

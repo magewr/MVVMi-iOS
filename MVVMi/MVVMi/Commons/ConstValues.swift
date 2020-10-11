@@ -1,3 +1,3 @@
 import Foundation
 
-let baseUrl: String = "https://api.math.tools"
+let baseUrl: String = "https://programming-quotes-api.herokuapp.com"

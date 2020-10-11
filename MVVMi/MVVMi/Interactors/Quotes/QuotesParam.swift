@@ -1,6 +1,6 @@
 
 import Foundation
 
-class NumberParam {
+class QuotesParam {
     
 }

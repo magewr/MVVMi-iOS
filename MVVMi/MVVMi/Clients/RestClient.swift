@@ -4,14 +4,13 @@ import RxSwift
 
 class RestClient: ClientProtocol {
     func request(url: String, parameters: [String : Any]) -> Single<Data> {
-        var param: [String : String] = parameters.mapValues { value -> String in
+        let param: [String : String] = parameters.mapValues { value -> String in
             if let value = value as? String {
                 return value
             }
             return String(describing: value)
         }
 
-        param["api_key"] = "X-MathTools-Api-Secret"
         return Single<Data>.create { single in
             AF.request(url, method: .get, parameters: param).responseData { responseData -> Void in
                 switch responseData.result {
