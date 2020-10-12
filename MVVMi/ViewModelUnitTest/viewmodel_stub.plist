@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>quotes_interactor_p_valid_param_01</key>
+	<key>main_viewmodel_p_valid_parse_01</key>
 	<dict>
 		<key>comment</key>
-		<string>PartnerInfoParam 정상 파라미터 테스트</string>
+		<string>정상 파라미터 테스트</string>
 		<key>given</key>
 		<string>{}</string>
 		<key>when</key>
@@ -15,25 +15,18 @@
 		<key>messageKey</key>
 		<string>success</string>
 	</dict>
-	<key>quotes_interactor_n_invalid_param_01</key>
+	<key>main_viewmodel_p_invalid_parse_01</key>
 	<dict>
 		<key>comment</key>
-		<string>PartnerInfoParam 잘못된 파라미터 테스트</string>
+		<string>비정상 인풋 테스트</string>
 		<key>given</key>
-		<string>{
-	&quot;uuid&quot;: &quot;5bfcbe81-7e19-11e6-8fcf-0af93de98ded&quot;,
-	&quot;partnerUuid&quot;: &quot;&quot;,
-	&quot;apiKey&quot;: &quot;BbdxVeXcJ0Z6bN6bpRN0KQ%2BWklZNIILWt1UB51w%2Bnx0%3D&quot;
-}</string>
+		<string>{}</string>
 		<key>when</key>
 		<string>{}</string>
 		<key>then</key>
-		<string>{
-    &quot;msg&quot;: &quot;다시 시도해주세요.&quot;,
-    &quot;code&quot;: &quot;99999&quot;
-}</string>
+		<string>{&quot;error json&quot;}</string>
 		<key>messageKey</key>
-		<string>networkInvalidParameter</string>
+		<string>error</string>
 	</dict>
 </dict>
 </plist>

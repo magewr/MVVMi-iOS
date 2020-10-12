@@ -18,13 +18,11 @@
 		CB4132962532DFEF003C405E /* QuotesResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C763252EDAEB008F091F /* QuotesResultModel.swift */; };
 		CB41329B2532E00E003C405E /* ConstValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C7AB252EE555008F091F /* ConstValues.swift */; };
 		CB4132A02532E00F003C405E /* ConstValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C7AB252EE555008F091F /* ConstValues.swift */; };
-		CB4132A62532E09F003C405E /* interactor_stub.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB4132A52532E09F003C405E /* interactor_stub.plist */; };
 		CBB0C65A252E97C8008F091F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C659252E97C8008F091F /* AppDelegate.swift */; };
 		CBB0C65E252E97C8008F091F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C65D252E97C8008F091F /* MainViewController.swift */; };
 		CBB0C661252E97C8008F091F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB0C65F252E97C8008F091F /* Main.storyboard */; };
 		CBB0C663252E97C9008F091F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB0C662252E97C9008F091F /* Assets.xcassets */; };
 		CBB0C666252E97C9008F091F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB0C664252E97C9008F091F /* LaunchScreen.storyboard */; };
-		CBB0C671252E97C9008F091F /* MVVMiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C670252E97C9008F091F /* MVVMiTests.swift */; };
 		CBB0C67C252E97C9008F091F /* MVVMiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C67B252E97C9008F091F /* MVVMiUITests.swift */; };
 		CBB0C6B1252E98ED008F091F /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C6A8252E98EC008F091F /* RxViewController.swift */; };
 		CBB0C6B2252E98ED008F091F /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C6A8252E98EC008F091F /* RxViewController.swift */; };
@@ -48,9 +46,21 @@
 		CBB0C764252EDAEB008F091F /* QuotesResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C763252EDAEB008F091F /* QuotesResultModel.swift */; };
 		CBB0C76A252EDBE4008F091F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C769252EDBE4008F091F /* MainViewModel.swift */; };
 		CBB0C76B252EDBE4008F091F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C769252EDBE4008F091F /* MainViewModel.swift */; };
-		CBB0C782252EDCA0008F091F /* InteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C781252EDCA0008F091F /* InteractorTest.swift */; };
 		CBB0C79E252EDCC7008F091F /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C74D252ED96D008F091F /* BaseInteractor.swift */; };
 		CBB0C7AC252EE555008F091F /* ConstValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C7AB252EE555008F091F /* ConstValues.swift */; };
+		CBF7F43C2533E9CB00563C46 /* stub_loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F43B2533E9CB00563C46 /* stub_loader.swift */; };
+		CBF7F4422533EA7C00563C46 /* quotes_interactor_p_valid_param_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F4412533EA7B00563C46 /* quotes_interactor_p_valid_param_01.swift */; };
+		CBF7F4472533EAD100563C46 /* QuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C753252EDA3A008F091F /* QuotesInteractor.swift */; };
+		CBF7F4502533F03F00563C46 /* QuotesParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0C75A252EDA88008F091F /* QuotesParam.swift */; };
+		CBF7F45D2533F23E00563C46 /* interactor_stub.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB4132A52532E09F003C405E /* interactor_stub.plist */; };
+		CBF7F4712533F86200563C46 /* interactor_stub.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB4132A52532E09F003C405E /* interactor_stub.plist */; };
+		CBF7F4782533F8FC00563C46 /* viewmodel_stub.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBF7F4762533F8FC00563C46 /* viewmodel_stub.plist */; };
+		CBF7F4792533F8FC00563C46 /* stub_loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F4772533F8FC00563C46 /* stub_loader.swift */; };
+		CBF7F47E2533F90400563C46 /* viewmodel_stub.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBF7F4762533F8FC00563C46 /* viewmodel_stub.plist */; };
+		CBF7F4842533F95100563C46 /* BaseInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F4832533F95100563C46 /* BaseInteractorStub.swift */; };
+		CBF7F48B2533F99000563C46 /* QuotesInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F48A2533F99000563C46 /* QuotesInteractorStub.swift */; };
+		CBF7F495253415F900563C46 /* main_viewmodel_p_valid_input_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F494253415F900563C46 /* main_viewmodel_p_valid_input_01.swift */; };
+		CBF7F49B25341BC500563C46 /* main_viewmodel_p_invalid_parse_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F49A25341BC500563C46 /* main_viewmodel_p_invalid_parse_01.swift */; };
 		D769E59A1D625EEA785A7B79 /* Pods_InteractorUnitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98C4DF0A42CAA18AF5342C1 /* Pods_InteractorUnitTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +107,6 @@
 		CBB0C665252E97C9008F091F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB0C667252E97C9008F091F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB0C66C252E97C9008F091F /* ViewModelUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewModelUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB0C670252E97C9008F091F /* MVVMiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMiTests.swift; sourceTree = "<group>"; };
 		CBB0C672252E97C9008F091F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB0C677252E97C9008F091F /* MVVMiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB0C67B252E97C9008F091F /* MVVMiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMiUITests.swift; sourceTree = "<group>"; };
@@ -114,9 +123,16 @@
 		CBB0C763252EDAEB008F091F /* QuotesResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResultModel.swift; sourceTree = "<group>"; };
 		CBB0C769252EDBE4008F091F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CBB0C77F252EDCA0008F091F /* InteractorUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteractorUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB0C781252EDCA0008F091F /* InteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorTest.swift; sourceTree = "<group>"; };
 		CBB0C783252EDCA0008F091F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB0C7AB252EE555008F091F /* ConstValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstValues.swift; sourceTree = "<group>"; };
+		CBF7F43B2533E9CB00563C46 /* stub_loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stub_loader.swift; sourceTree = "<group>"; };
+		CBF7F4412533EA7B00563C46 /* quotes_interactor_p_valid_param_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quotes_interactor_p_valid_param_01.swift; sourceTree = "<group>"; };
+		CBF7F4762533F8FC00563C46 /* viewmodel_stub.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = viewmodel_stub.plist; sourceTree = "<group>"; };
+		CBF7F4772533F8FC00563C46 /* stub_loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stub_loader.swift; sourceTree = "<group>"; };
+		CBF7F4832533F95100563C46 /* BaseInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorStub.swift; sourceTree = "<group>"; };
+		CBF7F48A2533F99000563C46 /* QuotesInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesInteractorStub.swift; sourceTree = "<group>"; };
+		CBF7F494253415F900563C46 /* main_viewmodel_p_valid_input_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_viewmodel_p_valid_input_01.swift; sourceTree = "<group>"; };
+		CBF7F49A25341BC500563C46 /* main_viewmodel_p_invalid_parse_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_viewmodel_p_invalid_parse_01.swift; sourceTree = "<group>"; };
 		D09695F7C4BDA6D3FF255323 /* Pods-MVVMi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMi.release.xcconfig"; path = "Target Support Files/Pods-MVVMi/Pods-MVVMi.release.xcconfig"; sourceTree = "<group>"; };
 		E6ED62E73D56018DA7A6B155 /* Pods-InteractorUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InteractorUnitTest.release.xcconfig"; path = "Target Support Files/Pods-InteractorUnitTest/Pods-InteractorUnitTest.release.xcconfig"; sourceTree = "<group>"; };
 		E98C4DF0A42CAA18AF5342C1 /* Pods_InteractorUnitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InteractorUnitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,8 +250,11 @@
 		CBB0C66F252E97C9008F091F /* ViewModelUnitTest */ = {
 			isa = PBXGroup;
 			children = (
-				CBB0C670252E97C9008F091F /* MVVMiTests.swift */,
+				CBF7F4892533F97C00563C46 /* MainViewModel */,
+				CBF7F4772533F8FC00563C46 /* stub_loader.swift */,
+				CBF7F4762533F8FC00563C46 /* viewmodel_stub.plist */,
 				CBB0C672252E97C9008F091F /* Info.plist */,
+				CBF7F4832533F95100563C46 /* BaseInteractorStub.swift */,
 			);
 			path = ViewModelUnitTest;
 			sourceTree = "<group>";
@@ -355,12 +374,31 @@
 		CBB0C780252EDCA0008F091F /* InteractorUnitTest */ = {
 			isa = PBXGroup;
 			children = (
-				CBB0C781252EDCA0008F091F /* InteractorTest.swift */,
+				CBF7F4A425341CD300563C46 /* QuotesIntercator */,
 				CB4132A52532E09F003C405E /* interactor_stub.plist */,
 				CBB0C783252EDCA0008F091F /* Info.plist */,
 				CB4132132532D386003C405E /* ClientStub.swift */,
+				CBF7F43B2533E9CB00563C46 /* stub_loader.swift */,
 			);
 			path = InteractorUnitTest;
+			sourceTree = "<group>";
+		};
+		CBF7F4892533F97C00563C46 /* MainViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7F48A2533F99000563C46 /* QuotesInteractorStub.swift */,
+				CBF7F494253415F900563C46 /* main_viewmodel_p_valid_input_01.swift */,
+				CBF7F49A25341BC500563C46 /* main_viewmodel_p_invalid_parse_01.swift */,
+			);
+			path = MainViewModel;
+			sourceTree = "<group>";
+		};
+		CBF7F4A425341CD300563C46 /* QuotesIntercator */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7F4412533EA7B00563C46 /* quotes_interactor_p_valid_param_01.swift */,
+			);
+			path = QuotesIntercator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,9 +533,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF7F47E2533F90400563C46 /* viewmodel_stub.plist in Resources */,
 				CBB0C666252E97C9008F091F /* LaunchScreen.storyboard in Resources */,
 				CBB0C663252E97C9008F091F /* Assets.xcassets in Resources */,
 				CBB0C661252E97C8008F091F /* Main.storyboard in Resources */,
+				CBF7F4712533F86200563C46 /* interactor_stub.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +545,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF7F4782533F8FC00563C46 /* viewmodel_stub.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +560,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4132A62532E09F003C405E /* interactor_stub.plist in Resources */,
+				CBF7F45D2533F23E00563C46 /* interactor_stub.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,16 +720,20 @@
 				CBB0C733252EB1D4008F091F /* ClientProtocol.swift in Sources */,
 				CBB0C755252EDA3A008F091F /* QuotesInteractor.swift in Sources */,
 				CB4132A02532E00F003C405E /* ConstValues.swift in Sources */,
-				CBB0C671252E97C9008F091F /* MVVMiTests.swift in Sources */,
 				CBB0C6BC252E98ED008F091F /* RxViewModel.swift in Sources */,
 				CBB0C75C252EDA88008F091F /* QuotesParam.swift in Sources */,
 				CBB0C722252E9B28008F091F /* Deinitializable.swift in Sources */,
 				CBB0C746252ED772008F091F /* ConstEnums.swift in Sources */,
+				CBF7F4792533F8FC00563C46 /* stub_loader.swift in Sources */,
 				CBB0C74F252ED96D008F091F /* BaseInteractor.swift in Sources */,
+				CBF7F495253415F900563C46 /* main_viewmodel_p_valid_input_01.swift in Sources */,
 				CBB0C73C252EB28C008F091F /* RestClient.swift in Sources */,
+				CBF7F4842533F95100563C46 /* BaseInteractorStub.swift in Sources */,
+				CBF7F49B25341BC500563C46 /* main_viewmodel_p_invalid_parse_01.swift in Sources */,
 				CBB0C6B2252E98ED008F091F /* RxViewController.swift in Sources */,
 				CBB0C76B252EDBE4008F091F /* MainViewModel.swift in Sources */,
 				CB4132962532DFEF003C405E /* QuotesResultModel.swift in Sources */,
+				CBF7F48B2533F99000563C46 /* QuotesInteractorStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,12 +750,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF7F4422533EA7C00563C46 /* quotes_interactor_p_valid_param_01.swift in Sources */,
+				CBF7F4472533EAD100563C46 /* QuotesInteractor.swift in Sources */,
 				CB41322C2532D464003C405E /* ClientProtocol.swift in Sources */,
 				CB4132142532D386003C405E /* ClientStub.swift in Sources */,
 				CB41328C2532DFE9003C405E /* Deinitializable.swift in Sources */,
 				CB41329B2532E00E003C405E /* ConstValues.swift in Sources */,
+				CBF7F4502533F03F00563C46 /* QuotesParam.swift in Sources */,
+				CBF7F43C2533E9CB00563C46 /* stub_loader.swift in Sources */,
 				CB4132912532DFEF003C405E /* QuotesResultModel.swift in Sources */,
-				CBB0C782252EDCA0008F091F /* InteractorTest.swift in Sources */,
 				CB4132312532D48E003C405E /* ConstEnums.swift in Sources */,
 				CBB0C79E252EDCC7008F091F /* BaseInteractor.swift in Sources */,
 			);
