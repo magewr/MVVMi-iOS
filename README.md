@@ -8,3 +8,5 @@ Android, iOS 통합 아키텍쳐로 Model, ViewModel, Interactor 레이어는 �
 View 레이어는 각각의 플랫폼에 종속됩니다.
 
 현재 코드는 초창기 형태로 지속 변경될 수 있습니다.
+
+Android Code : https://github.com/magewr/MVVMi-Android
