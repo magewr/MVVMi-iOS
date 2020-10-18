@@ -43,7 +43,6 @@ class MainViewModel: RxViewModel, RxViewModelProtocol {
             .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap{ self.dependency.quotesInteractor.requestRandomQuotes(param: QuotesParam()) }
             .compactMap{ $0.en }
-            .subscribeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] quotes in
                 guard let self = self else { return}
                 self.getRandomQuotesResultSubject.accept(quotes)

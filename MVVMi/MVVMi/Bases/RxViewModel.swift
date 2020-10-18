@@ -16,7 +16,6 @@ protocol RxViewModelProtocol {
 
     var input: Input! { get }
     var output: Output! { get }
-    func deinitialize()
 }
 
 class RxViewModel: NSObject, Deinitializable {

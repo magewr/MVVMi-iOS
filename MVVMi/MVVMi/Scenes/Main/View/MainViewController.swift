@@ -1,4 +1,5 @@
 import UIKit
+import RxSwift
 
 class MainViewController: RxViewController<MainViewModel> {
     @IBOutlet weak var quotesLabel: UILabel!
@@ -15,6 +16,7 @@ class MainViewController: RxViewController<MainViewModel> {
 
     func bindInputs() {
         self.nextBtn.rx.tap
+            .throttle(.milliseconds(300), latest: false, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
                 guard let self = self else { return }
                 self.viewModel.input.getRandomQuotes.onNext(())

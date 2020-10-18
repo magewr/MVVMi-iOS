@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import RxSwift
 
-class RxViewController<T>: UIViewController, Deinitializable {
+class RxViewController<T: RxViewModel>: UIViewController, Deinitializable {
     typealias ViewModel = T
     var viewModel: ViewModel!
     var disposeBag = DisposeBag()
