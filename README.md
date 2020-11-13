@@ -19,6 +19,4 @@ Swift버전에는 DI 라이브러리를 사용하지 않고 생성자를 통한 
 
 ##
 
-코드는 지속 변경될 수 있습니다.
-
 Android Code : https://github.com/magewr/MVVMi-Android
