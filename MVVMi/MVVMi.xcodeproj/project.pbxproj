@@ -57,16 +57,16 @@
 		CBF7F48B2533F99000563C46 /* QuotesInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F48A2533F99000563C46 /* QuotesInteractorStub.swift */; };
 		CBF7F495253415F900563C46 /* main_viewmodel_p_valid_input_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F494253415F900563C46 /* main_viewmodel_p_valid_input_01.swift */; };
 		CBF7F49B25341BC500563C46 /* main_viewmodel_p_invalid_parse_01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7F49A25341BC500563C46 /* main_viewmodel_p_invalid_parse_01.swift */; };
+		DD7DB48128DAF78400171BAB /* ReactiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DB47F28DAF78400171BAB /* ReactiveExtension.swift */; };
+		DD7DB48228DAF78400171BAB /* AddWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DB48028DAF78400171BAB /* AddWith.swift */; };
 		DDD85E9E28DAE1B900BF82D6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDD85E9D28DAE1B900BF82D6 /* SnapKit */; };
 		DDD85EA328DAE1D300BF82D6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DDD85EA228DAE1D300BF82D6 /* RxCocoa */; };
 		DDD85EA528DAE1D300BF82D6 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DDD85EA428DAE1D300BF82D6 /* RxRelay */; };
 		DDD85EA728DAE1D300BF82D6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DDD85EA628DAE1D300BF82D6 /* RxSwift */; };
-		DDD85EAC28DAE60E00BF82D6 /* AddWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD85EAB28DAE60E00BF82D6 /* AddWith.swift */; };
 		DDD85EAF28DAE84900BF82D6 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = DDD85EAE28DAE84900BF82D6 /* RxBlocking */; };
 		DDD85EB128DAE84900BF82D6 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = DDD85EB028DAE84900BF82D6 /* RxTest */; };
 		DDD85EB328DAE85600BF82D6 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = DDD85EB228DAE85600BF82D6 /* RxBlocking */; };
 		DDD85EB528DAE85600BF82D6 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = DDD85EB428DAE85600BF82D6 /* RxTest */; };
-		DDF1428928DADAD500E7045B /* ReactiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF1428828DADAD500E7045B /* ReactiveExtension.swift */; };
 		DDF1429128DADC4200E7045B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DDF1429028DADC4200E7045B /* Then */; };
 		DDF142A928DADCF700E7045B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DDF142A828DADCF700E7045B /* Alamofire */; };
 /* End PBXBuildFile section */
@@ -131,8 +131,8 @@
 		CBF7F48A2533F99000563C46 /* QuotesInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesInteractorStub.swift; sourceTree = "<group>"; };
 		CBF7F494253415F900563C46 /* main_viewmodel_p_valid_input_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_viewmodel_p_valid_input_01.swift; sourceTree = "<group>"; };
 		CBF7F49A25341BC500563C46 /* main_viewmodel_p_invalid_parse_01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_viewmodel_p_invalid_parse_01.swift; sourceTree = "<group>"; };
-		DDD85EAB28DAE60E00BF82D6 /* AddWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWith.swift; sourceTree = SOURCE_ROOT; };
-		DDF1428828DADAD500E7045B /* ReactiveExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtension.swift; sourceTree = SOURCE_ROOT; };
+		DD7DB47F28DAF78400171BAB /* ReactiveExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveExtension.swift; sourceTree = "<group>"; };
+		DD7DB48028DAF78400171BAB /* AddWith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWith.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,8 +261,8 @@
 		CBB0C6A4252E989F008F091F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DDF1428828DADAD500E7045B /* ReactiveExtension.swift */,
-				DDD85EAB28DAE60E00BF82D6 /* AddWith.swift */,
+				DD7DB48028DAF78400171BAB /* AddWith.swift */,
+				DD7DB47F28DAF78400171BAB /* ReactiveExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -578,8 +578,8 @@
 				CBB0C732252EB1D4008F091F /* ClientProtocol.swift in Sources */,
 				CBB0C7AC252EE555008F091F /* ConstValues.swift in Sources */,
 				CBB0C6B1252E98ED008F091F /* RxViewController.swift in Sources */,
-				DDD85EAC28DAE60E00BF82D6 /* AddWith.swift in Sources */,
-				DDF1428928DADAD500E7045B /* ReactiveExtension.swift in Sources */,
+				DD7DB48228DAF78400171BAB /* AddWith.swift in Sources */,
+				DD7DB48128DAF78400171BAB /* ReactiveExtension.swift in Sources */,
 				CBB0C745252ED772008F091F /* ConstEnums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
