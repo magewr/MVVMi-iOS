@@ -1,10 +1,3 @@
-//
-//  MVVMiUITests.swift
-//  MVVMiUITests
-//
-//  Created by UramMyeongbu on 2020/10/08.
-//
-
 import XCTest
 //
 //class MVVMiUITests: XCTestCase {

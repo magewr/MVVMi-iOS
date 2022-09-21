@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-protocol BaseInteractorProtocol: class, Deinitializable {
+protocol BaseInteractorProtocol: AnyObject, Deinitializable {
     func request<T, R : Decodable>(url: String, param: T) -> Single<R>
     func deinitialize()
 }
@@ -25,12 +25,12 @@ class BaseInteractor: BaseInteractorProtocol {
     func request<T, R : Decodable>(url: String, param: T) -> Single<R> {
         return Single<R>.create { [weak self] single in
             guard let self = self else {
-                single(.error(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.systemDeallocated.rawValue, userInfo: nil)))
+                single(.failure(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.systemDeallocated.rawValue, userInfo: nil)))
                 return Disposables.create()
             }
 
             guard self.paramValidateCheck(param: param, url: url) else {
-                single(.error(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.networkInvalidParameter.rawValue, userInfo: nil)))
+                single(.failure(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.networkInvalidParameter.rawValue, userInfo: nil)))
                 return Disposables.create()
             }
             
@@ -43,10 +43,10 @@ class BaseInteractor: BaseInteractorProtocol {
                         single(.success(responseModel))
                     }
                     catch {
-                        single(.error(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.networkInvalidParse.rawValue, userInfo: nil)))
+                        single(.failure(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.networkInvalidParse.rawValue, userInfo: nil)))
                     }
-                }, onError: { error in
-                    single(.error(error))
+                }, onFailure: { error in
+                    single(.failure(error))
                 })
                 .disposed(by: self.disposeBag)
             

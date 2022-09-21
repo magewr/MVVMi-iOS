@@ -19,19 +19,19 @@ class RestClient: ClientProtocol {
                         if let _ = try? JSONSerialization.jsonObject(with: value, options: JSONSerialization.ReadingOptions.allowFragments) {
                             single(.success(value))
                         } else {
-                            single(.error(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.networkInvalidParse.rawValue, userInfo: nil)))
+                            single(.failure(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.networkInvalidParse.rawValue, userInfo: nil)))
                         }
                     }
                 default:
                     if let errorCode = responseData.response?.statusCode {
-                        single(.error(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.networkInvalidRequest.rawValue, userInfo: ["code" : errorCode])))
+                        single(.failure(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.networkInvalidRequest.rawValue, userInfo: ["code" : errorCode])))
                     }
                     else {
-                        single(.error(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.unknownCode.rawValue)))
+                        single(.failure(NSError(domain: "\(#file):\(#function):\(#line):\(#column)", code: ClientError.unknownCode.rawValue)))
                     }
                 }
             }
             return Disposables.create()
-        }.subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+        }.subscribe(on: ConcurrentDispatchQueueScheduler(qos: .background))
     }
 }

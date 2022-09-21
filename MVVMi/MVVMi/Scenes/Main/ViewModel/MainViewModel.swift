@@ -5,12 +5,12 @@ import RxCocoa
 
 class MainViewModel: RxViewModel, RxViewModelProtocol {
     struct Input {
-        var getRandomQuotes: AnyObserver<Void>
+        var getRandomQuotes: PublishRelay<Void>
     }
 
     struct Output {
-        var getRandomQuotesResult: Observable<String>
-        var error: Observable<String>
+        var getRandomQuotesResult: Signal<String>
+        var error: Signal<String>
     }
 
     struct Dependency {
@@ -20,8 +20,8 @@ class MainViewModel: RxViewModel, RxViewModelProtocol {
     var input: MainViewModel.Input!
     var output: MainViewModel.Output!
     var dependency: MainViewModel.Dependency!
-    private var getRandomQuotesSubject = PublishSubject<Void>()
-    private var getRandomQuotesResultSubject = PublishRelay<String>()
+    private var getRandomQuotesRelay = PublishRelay<Void>()
+    private var getRandomQuotesResultRelay = PublishRelay<String>()
     private var errorSubject = PublishRelay<String>()
     
     init(dependency: Dependency) {
@@ -33,21 +33,21 @@ class MainViewModel: RxViewModel, RxViewModelProtocol {
     }
     
     override func initialize() {
-        self.input = MainViewModel.Input(getRandomQuotes: self.getRandomQuotesSubject.asObserver())
-        self.output = MainViewModel.Output(getRandomQuotesResult: self.getRandomQuotesResultSubject.asObservable(),
-                                           error: self.errorSubject.asObservable())
+        self.input = MainViewModel.Input(getRandomQuotes: self.getRandomQuotesRelay)
+        self.output = MainViewModel.Output(getRandomQuotesResult: self.getRandomQuotesResultRelay.asSignal(),
+                                           error: self.errorSubject.asSignal())
     }
     
     func bindInputs() {
-        self.getRandomQuotesSubject
-            .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+        self.getRandomQuotesRelay
+            .observe(on: ConcurrentDispatchQueueScheduler(qos: .background))
             .flatMap{ self.dependency.quotesInteractor.requestRandomQuotes(param: QuotesParam()) }
             .compactMap{ $0.en }
-            .subscribe(onNext: { [weak self] quotes in
-                guard let self = self else { return}
-                self.getRandomQuotesResultSubject.accept(quotes)
+            .withUnretained(self)
+            .subscribe(onNext: {(self, quotes) in
+                self.getRandomQuotesResultRelay.accept(quotes)
             }, onError: { [weak self] error in
-                guard let self = self else { return}
+                guard let self = self else { return }
                 self.errorSubject.accept(error.localizedDescription)
             })
             .disposed(by: self.disposeBag)
